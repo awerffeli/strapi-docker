@@ -1,4 +1,4 @@
-FROM node:9.11.1-alpine
+FROM node:9.11.2-alpine
 
 LABEL maintainer="Luca Perret <perret.luca@gmail.com>" \
       org.label-schema.vendor="Strapi" \
@@ -11,7 +11,7 @@ LABEL maintainer="Luca Perret <perret.luca@gmail.com>" \
 
 WORKDIR /usr/src/api
 
-RUN npm install -g strapi@3.0.0-alpha.12.2
+RUN npm install -g strapi@3.0.0-alpha.12.4
 
 COPY strapi.sh ./
 RUN chmod +x ./strapi.sh
