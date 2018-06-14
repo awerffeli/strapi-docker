@@ -3,6 +3,7 @@ version: '3'
 services:
   api:
     image: strapi/strapi
+    container_name: strapi
     environment:
       - APP_NAME=strapi-app
       - DATABASE_CLIENT=mongo
@@ -23,6 +24,7 @@ services:
 
   db:
     image: mongo
+    container_name: strapi-mongo
     environment:
       - MONGO_INITDB_DATABASE=strapi
     ports:
