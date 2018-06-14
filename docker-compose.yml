@@ -2,7 +2,7 @@ version: '3'
 
 services:
   api:
-    image: strapi/strapi
+    image: xrb12xrb/strapi:1.0.0
     container_name: strapi
     environment:
       - APP_NAME=strapi-app

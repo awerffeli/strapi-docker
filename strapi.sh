@@ -23,6 +23,13 @@ then
 fi
 
 cd $APP_NAME
+
+#Fix Issue https://github.com/strapi/strapi/issues/679 added by xrb12xrb
+npm install
+npm install strapi@3.0.0-alpha.12.4 --save
+npm install strapi-mongoose@3.0.0-alpha.12.4 --save
+npm install strapi-bookshelf@3.0.0-alpha.12.4 --save
+
 strapi start &
 
 strapiPID=$!
